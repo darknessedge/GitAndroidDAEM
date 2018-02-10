@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    protected Button boton;
+    protected Button boton, boton2;
     protected TextView texto;
 
     @Override
@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         boton=findViewById(R.id.boton);
+        boton2=findViewById(R.id.boton2);
         texto=findViewById(R.id.texto);
 
     boton.setOnClickListener(new View.OnClickListener() {
@@ -24,6 +25,13 @@ public class MainActivity extends AppCompatActivity {
             texto.setText("Hola GitHUB");
         }
     });
+
+        boton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                texto.setText("Hola Diplomado Android");
+            }
+        });
 
 
     }
