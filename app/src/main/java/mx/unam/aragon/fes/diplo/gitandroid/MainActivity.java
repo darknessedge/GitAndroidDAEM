@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,7 +23,10 @@ public class MainActivity extends AppCompatActivity {
     boton.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+
             texto.setText("Hola GitHUB");
+            Toast.makeText(MainActivity.this,
+                    "Secambio el mensaje en el textView",Toast.LENGTH_SHORT).show();
         }
     });
 
